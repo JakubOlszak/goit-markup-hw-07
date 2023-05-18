@@ -1,11 +1,13 @@
-$mainColor: #212121;
-$supportColor: #757575;
-$highlightColor: #2196f3;
-$blackColor: #000000;
-$whiteColor: #ffffff;
-$footerLinkColor: rgba(255, 255, 255, 0.6);
-$backgroundColor: #2f303a;
-$boxShadowColor: rgba(0, 0, 0, 0.15);
-$teamColor: #f5f4fa;
-$heroGradient: rgba(47, 48, 58, 0.4);
-$customersIcon: #afb1b8;
+$primaryColor: #2196f3;
+
+$secondaryColorBlack: #212121;
+$secondaryColorWhite: #fff;
+
+$tertiaryColorDark: #2f303a;
+$tertiaryColorGrey: #757575;
+$tertiaryColorLight: #afb1b8;
+
+$borderRadiusDefault: 4px;
+
+$transitionDurationDefault: 250ms;
+$transitionTimingDefault: cubic-bezier(0.4, 0, 0.2, 1););

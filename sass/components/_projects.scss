@@ -1,88 +1,70 @@
-// Projekty porfolio
-.project {
-  list-style-type: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  row-gap: 30px;
-  column-gap: 20px;
-
-  &__box {
-    background-color: $whiteColor;
-    border: 1px solid #eeeeee;
-
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.projects {
+  &__list {
+    padding-bottom: 94px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+    column-gap: 20px;
   }
 
-  &__overlay {
+  &__list-item {
+    transition-property: box-shadow;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: $transitionTimingDefault;
+  }
+
+  &__list-item:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+
+  &__photo {
     position: relative;
+    width: 370px;
+    height: 274px;
     overflow: hidden;
   }
 
-  &__overlay > img {
-    display: block;
-  }
-
-  &__overlay-card {
+  &__photo-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(33, 150, 243, 0.9);
-
     display: flex;
     align-items: center;
-
-    transition-property: transform;
+    background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-property: transform;
+    transition-duration: $transitionDurationDefault;
+    transition-timing-function: ease;
   }
 
-  &__overlay-card-text {
-    font-style: inherit;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 1.56;
-    letter-spacing: 0.03em;
-    color: $whiteColor;
-
-    padding: 0 24px;
-  }
-
-  &__box:hover &__overlay-card {
+  &__list-item:hover &__photo-overlay {
     transform: translateY(0);
   }
 
-  &__box:hover,
-  &__box:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    cursor: pointer;
+  &__photo-overlay-text {
+    color: $secondaryColorWhite;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+
+  &__description {
+    border: 1px solid #eee;
+    border-top: none;
+    padding: 20px 24px;
   }
 
   &__description-title {
-    font-style: inherit;
-    font-weight: 700;
-    font-size: 18px;
     line-height: 2;
-    letter-spacing: 0.06em;
-    color: $mainColor;
-
-    margin: 20px 24px 4px;
   }
 
   &__description-text {
-    font-style: inherit;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 1.88;
-    letter-spacing: 0.03em;
-    color: $supportColor;
-
-    margin: 0 24px 20px;
+    color: $tertiaryColorGrey;
+    line-height: 2;
   }
 }
