@@ -36,7 +36,7 @@ body {
   padding-bottom: 94px;
 }
 
-.section-title {
+.section__title {
   font-size: 36px;
   margin: 0;
   margin-bottom: 50px;
@@ -186,7 +186,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-max-width: 1600px;
+  max-width: 1600px;
   display: flex;
   justify-content: center;
   align-items: center;
