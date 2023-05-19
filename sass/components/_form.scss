@@ -1,7 +1,7 @@
-   form {
+   .form {
     display: flex;
     flex-direction: column;
-  }
+ 
 
   &__label &__icon {
     transition-property: fill;
@@ -77,4 +77,4 @@
     letter-spacing: 0.03em;
     line-height: 1.8;
     color: $tertiaryColorGrey;
-  }
+  } }
